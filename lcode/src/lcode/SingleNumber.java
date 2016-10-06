@@ -1,11 +1,11 @@
 package lcode;
 
 /**
- * 
+ * 136. Single Number
  * @author smeng
  *
  */
-//136. Single Number
+
 //Given an array of integers, every element appears twice except for one. Find that single one.
 //
 //Note:
