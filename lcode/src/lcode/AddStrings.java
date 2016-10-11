@@ -36,6 +36,9 @@ public class AddStrings {
 			sb.append(sum%10);
 			carry = sum/10;
 		}
+		if(carry!=0) {
+		    sb.append(carry);
+		}
 		return sb.reverse().toString();
 	}
 	public static void main(String[] args) {
