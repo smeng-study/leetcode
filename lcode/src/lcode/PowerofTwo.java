@@ -15,7 +15,7 @@ public class PowerofTwo {
         return isPowerOfTwo(n/2);
     }
 	public static boolean isPowerOfTwo2(int n) {
-		return Math.log10(n)/Math.log10(2) % 1 == 0;
+		return Math.log10(n)/Math.log10(2) % 1 == 0; //modulo by one, get decimal  
     }
 	public static boolean isPowerOfTwo3(int n) {
 		return n>0 && (n&(n-1))==0;
