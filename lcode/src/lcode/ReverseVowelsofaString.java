@@ -1,7 +1,5 @@
 package lcode;
 
-import java.util.Arrays;
-
 /**
  * 345. Reverse Vowels of a String
  * @author smeng
