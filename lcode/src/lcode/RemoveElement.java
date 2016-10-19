@@ -1,8 +1,5 @@
 package lcode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 27. Remove Element
  * @author smeng
