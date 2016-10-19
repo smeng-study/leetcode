@@ -23,11 +23,23 @@ public class HouseRobber {
         }
         return dp[nums.length-1];
     }
+	public static int rob2(int[] nums) {
+		if(nums==null || nums.length<1) return 0;
+		if(nums.length==1) return nums[0];
+        int include = 0, exclude = 0;
+        for(int i=0; i<nums.length; i++) {
+        	int in = include;
+        	int ex = exclude;
+        	include = Math.max(in, ex+nums[i]);
+        	exclude = Math.max(in, ex);
+        }
+        return Math.max(include, exclude);
+    }
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int money[] = {2,4,1,5,2,13,9};
-		System.out.println(rob(money));
+		System.out.println(rob2(money));
 	}
 
 }
