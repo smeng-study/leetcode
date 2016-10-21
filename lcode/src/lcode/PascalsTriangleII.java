@@ -50,9 +50,21 @@ public class PascalsTriangleII {
         return tmp;
     }
 
+	public static List<Integer> getRowSpaceK(int rowIndex) {
+		List<Integer> tmp = new ArrayList<Integer>();
+		tmp.add(1);
+        for(int i=1; i<=rowIndex; i++) {
+        	for(int j=i-1; j>=1; j--) {
+        		tmp.set(j, tmp.get(j)+tmp.get(j-1));
+        	}
+        	tmp.add(1);
+        }    
+        return tmp;
+    }
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		List<Integer> res = getRow2(4);
+		List<Integer> res = getRowSpaceK(4);
 		for(Integer i: res) {
 			System.out.println(i);
 		}
